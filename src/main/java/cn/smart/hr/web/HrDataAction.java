@@ -1,17 +1,16 @@
-package cn.interheart.hr.hr.web;
+package cn.smart.hr.web;
 
-import cn.interheart.hr.service.HrDataService;
-import org.apache.commons.lang3.time.DateUtils;
+import cn.smart.service.HrDataService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.util.Date;
 import java.util.HashMap;
 
 /**
@@ -36,7 +35,7 @@ public class HrDataAction {
 
 	@RequestMapping(value = "uploadData",method = RequestMethod.POST)
 	@ResponseBody
-	public Object uploadData( MultipartFile file) throws Exception {
+	public Object uploadData(@RequestParam(value = "file") MultipartFile file) throws Exception {
 
 		hrDataService.uploadData(file.getOriginalFilename(),file.getInputStream());
 		return new HashMap<>();

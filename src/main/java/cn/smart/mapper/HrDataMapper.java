@@ -1,6 +1,6 @@
-package cn.interheart.hr.mapper;
+package cn.smart.mapper;
 
-import cn.interheart.hr.entity.HrData;
+import cn.smart.entity.HrData;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 

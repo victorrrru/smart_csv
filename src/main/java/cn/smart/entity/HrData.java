@@ -1,4 +1,4 @@
-package cn.interheart.hr.entity;
+package cn.smart.entity;
 
 import org.apache.ibatis.type.Alias;
 import org.hibernate.validator.constraints.Length;

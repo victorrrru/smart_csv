@@ -1,8 +1,8 @@
-package cn.interheart.hr.service;
+package cn.smart.service;
 
-import cn.interheart.hr.ServiceException;
-import cn.interheart.hr.entity.UploadDeviceTmp;
-import cn.interheart.hr.mapper.UploadDeviceTmpMapper;
+import cn.smart.ServiceException;
+import cn.smart.entity.UploadDeviceTmp;
+import cn.smart.mapper.UploadDeviceTmpMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

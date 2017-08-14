@@ -1,6 +1,6 @@
-package cn.interheart.hr.mapper;
+package cn.smart.mapper;
 
-import cn.interheart.hr.entity.Student;
+import cn.smart.entity.Student;
 import org.apache.ibatis.annotations.Insert;
 
 /**

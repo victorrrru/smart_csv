@@ -1,4 +1,4 @@
-package cn.interheart.hr;
+package cn.smart;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

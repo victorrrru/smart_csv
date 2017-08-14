@@ -1,7 +1,7 @@
-package cn.interheart.hr.service;
+package cn.smart.service;
 
-import cn.interheart.hr.hr.web.DeviceDto;
-import cn.interheart.hr.hr.web.HrDataDto;
+import cn.smart.hr.web.DeviceDto;
+import cn.smart.hr.web.HrDataDto;
 import com.opencsv.CSVReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

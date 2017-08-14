@@ -1,6 +1,6 @@
-package cn.interheart.hr.mapper;
+package cn.smart.mapper;
 
-import cn.interheart.hr.entity.UploadDeviceTmp;
+import cn.smart.entity.UploadDeviceTmp;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

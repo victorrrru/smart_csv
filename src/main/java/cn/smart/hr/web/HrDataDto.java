@@ -1,4 +1,4 @@
-package cn.interheart.hr.hr.web;
+package cn.smart.hr.web;
 
 /**
  * Created by think on 2017/5/31.

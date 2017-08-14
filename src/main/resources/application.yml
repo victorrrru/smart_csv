@@ -1,29 +1,21 @@
 spring:
-    datasource:
-        name: demo
-        url: jdbc:mysql://localhost:3306/demo
-        username: root
-        password: Qianxin123
-        # \u4F7F\u7528druid\u6570\u636E\u6E90
-        type: com.alibaba.druid.pool.DruidDataSource
-        driver-class-name: com.mysql.jdbc.Driver
-        filters: stat
-        maxActive: 20
-        initialSize: 1
-        maxWait: 60000
-        minIdle: 1
-        timeBetweenEvictionRunsMillis: 60000
-        minEvictableIdleTimeMillis: 300000
-        validationQuery: select 'x'
-        testWhileIdle: true
-        testOnBorrow: false
-        testOnReturn: false
-        poolPreparedStatements: true
-        maxOpenPreparedStatements: 20
-mybatis:
-  executor-type: batch
-management:
-  security:
-    enabled: false
+  profiles:
+    active: dev
+
+  datasource:
+    smart:
+      url: jdbc:mysql://192.168.0.181:3306/smart_device?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8
+      username: root
+      password: 123456
+
+
+  session:
+    store-type: none
+
+  aop:
+    auto: true
+
 logging:
-  level: debug
+  config: classpath:logback.xml
+#logging:
+#  path: /workspace/rock/jpa-test/log

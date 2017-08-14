@@ -1,4 +1,4 @@
-package cn.interheart.hr.entity;
+package cn.smart.entity;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
